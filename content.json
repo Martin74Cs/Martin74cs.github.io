@@ -44,9 +44,9 @@
   },
   {
     "id": "test",
-    "name": "Test",
-    "description": "Toto jsou testovací data.",
-    "url": "10.55.1.100:90/had/",
+    "name": "Nosník",
+    "description": "Veknutý nostník",
+    "url": "https://martin74cs.github.io/VetknutyNostnik/",
     "additionalInfo": "Toto je položka pro testování chování aplikace s různými daty."
   },
   {
