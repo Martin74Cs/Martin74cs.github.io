@@ -30,7 +30,8 @@
   },
   {
     "id": "reports",
-    "name": "Informace",
+    "name": "Čerpadlo",
+    "url": "https://martin74cs.github.io/cerpadlo/"
     "description": "Generujte a analyzujte různé reporty. Získejte cenné statistiky a přehledy o svých datech.",
     "imageUrl": "https://picsum.photos/800/600?random=5",
     "additionalInfo": "Podrobné grafy a tabulky pro lepší pochopení vašich dat a trendů."
