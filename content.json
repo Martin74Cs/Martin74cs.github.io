@@ -1,0 +1,51 @@
+[
+  {
+    "id": "home",
+    "name": "Domů",
+    "description": "Vítejte na domovské stránce! Zde najdete přehled nejnovějších aktualizací a důležitých informací.",
+    "imageUrl": "https://picsum.photos/800/600?random=1",
+    "additionalInfo": "Na domovské stránce můžete rychle přistupovat k nejdůležitějším funkcím a vidět aktuální oznámení."
+  },
+  {
+    "id": "profile",
+    "name": "Profil",
+    "description": "Spravujte svůj uživatelský profil. Můžete zde aktualizovat své osobní údaje a nastavení soukromí.",
+    "imageUrl": "https://picsum.photos/800/600?random=2",
+    "additionalInfo": "Aktualizujte svůj avatar, změňte heslo nebo upravte své kontaktní údaje."
+  },
+  {
+    "id": "settings",
+    "name": "Nastavení",
+    "description": "Konfigurujte aplikaci podle svých potřeb. Změňte jazyk, motiv nebo jiná systémová nastavení.",
+    "imageUrl": "https://picsum.photos/800/600?random=3",
+    "additionalInfo": "Přizpůsobte si vzhled aplikace, notifikace a další pokročilá nastavení."
+  },
+  {
+    "id": "messages",
+    "name": "Zprávy",
+    "description": "Prohlížejte a spravujte své zprávy. Můžete zde odesílat nové zprávy a odpovídat na stávající konverzace.",
+    "imageUrl": "https://picsum.photos/800/600?random=4",
+    "additionalInfo": "Vaše soukromá schránka pro komunikaci s ostatními uživateli. Všechny zprávy jsou bezpečně uloženy."
+  },
+  {
+    "id": "reports",
+    "name": "Reporty",
+    "description": "Generujte a analyzujte různé reporty. Získejte cenné statistiky a přehledy o svých datech.",
+    "imageUrl": "https://picsum.photos/800/600?random=5",
+    "additionalInfo": "Podrobné grafy a tabulky pro lepší pochopení vašich dat a trendů."
+  },
+  {
+    "id": "help",
+    "name": "Nápověda",
+    "description": "Potřebujete pomoc? Projděte si naše FAQ nebo kontaktujte podporu.",
+    "imageUrl": "https://picsum.photos/800/600?random=6",
+    "additionalInfo": "Komplexní sekce nápovědy, která vám pomůže vyřešit jakýkoli problém."
+  },
+  {
+    "id": "test-page",
+    "name": "Test",
+    "description": "Toto jsou testovací data.",
+    "url": "https://martin74cs.github.io/ZkratoveProudy/",
+    "additionalInfo": "Toto je položka pro testování chování aplikace s různými daty."
+  }
+]
