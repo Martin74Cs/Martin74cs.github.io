@@ -50,9 +50,9 @@
     "additionalInfo": "Toto je položka pro testování chování aplikace s různými daty."
   },
   {
-    "id": "Had",
-    "name": "Had",
-    "description": "Toto je primiticní hra had.",
+    "id": "Zkrat",
+    "name": "Zkrat",
+    "description": "Toto je primiticní výpočet zkratových poměrů sítě.",
     "url": "https://martin74cs.github.io/ZkratoveProudy/",
     "additionalInfo": "Toto je položka pro testování chování aplikace s různými daty."
   }
