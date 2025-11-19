@@ -8,8 +8,9 @@
   },
   {
     "id": "profile",
-    "name": "Profil",
+    "name": "Git přehled",
     "description": "Spravujte svůj uživatelský profil. Můžete zde aktualizovat své osobní údaje a nastavení soukromí.",
+    "url": "https://martin74cs.github.io/GitHubPrehled/",
     "imageUrl": "https://picsum.photos/800/600?random=2",
     "additionalInfo": "Aktualizujte svůj avatar, změňte heslo nebo upravte své kontaktní údaje."
   },
