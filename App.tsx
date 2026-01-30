@@ -12,7 +12,7 @@ function App() {
 
   // Načtení dat z externího JSON souboru
   useEffect(() => {
-    fetch('./content.json')
+    fetch('content.json')
       .then(response => {
         if (!response.ok) {
           throw new Error('Nepodařilo se načíst konfigurační soubor.');
