@@ -1,5 +1,5 @@
 {
-  "name": "Navigační Ukázka",
-  "description": "Jednoduchá React aplikace s navigačním panelem vlevo a dynamickou obsahovou oblastí vpravo.",
+  "name": "ElektroVzorce",
+  "description": "Interaktivní pracovní prostor pro výpočty podle ČSN 62305 ed.4 (šablony bez licencovaného obsahu).",
   "requestFramePermissions": []
 }

@@ -1,6 +1,7 @@
 
 import React from 'react';
 import { ContentDetail } from '../types';
+import FormulaSectionList from './FormulaSectionList';
 
 interface ContentAreaProps {
   selectedContentDetail: ContentDetail | null;
@@ -26,6 +27,25 @@ const ContentArea: React.FC<ContentAreaProps> = ({ selectedContentDetail }) => {
           className="w-full h-full border-0"
           allowFullScreen
         ></iframe>
+      ) : selectedContentDetail.type === 'formulas' ? (
+        <div className="p-4 sm:p-8 max-w-5xl mx-auto space-y-6">
+          <header className="space-y-4">
+            <h1 className="text-3xl md:text-4xl font-extrabold text-gray-900">
+              {selectedContentDetail.name}
+            </h1>
+            <p className="text-base md:text-lg text-gray-700">
+              {selectedContentDetail.description}
+            </p>
+            {selectedContentDetail.legalNotice && (
+              <div className="rounded-2xl border border-amber-200 bg-amber-50 p-4 text-sm text-amber-900">
+                {selectedContentDetail.legalNotice}
+              </div>
+            )}
+          </header>
+          {selectedContentDetail.formulaSections && (
+            <FormulaSectionList sections={selectedContentDetail.formulaSections} />
+          )}
+        </div>
       ) : (
         <div className="p-4 sm:p-8 max-w-4xl mx-auto"> {/* Padding přidán zpět do vnitřního divu */}
           <h1 className="text-3xl md:text-4xl font-extrabold text-gray-800 mb-6">

@@ -10,7 +10,7 @@ interface SidebarProps {
 const Sidebar: React.FC<SidebarProps> = ({ items, selectedItemIndex, onSelect }) => {
   return (
     <div className="w-full sm:w-64 bg-gray-800 text-white flex flex-col h-full overflow-y-auto shadow-lg p-4 md:p-6">
-      <h2 className="text-2xl font-bold mb-6 text-center text-indigo-300">Menu</h2>
+      <h2 className="text-2xl font-bold mb-6 text-center text-indigo-300">ElektroVzorce</h2>
       <nav className="flex flex-col space-y-2">
         {items.map((item, index) => ( // Přidán index
           <button
@@ -28,13 +28,12 @@ const Sidebar: React.FC<SidebarProps> = ({ items, selectedItemIndex, onSelect })
           >
             {/* Simple placeholder icon, replace with actual icons if needed */}
             <span className="mr-3 text-xl">
-              {item.id === 'home' && '🏠'}
-              {item.id === 'profile' && '👤'}
-              {item.id === 'settings' && '⚙️'}
-              {item.id === 'messages' && '✉️'}
-              {item.id === 'reports' && '📊'}
-              {item.id === 'help' && '❓'}
-              {!['home', 'profile', 'settings', 'messages', 'reports', 'help'].includes(item.id) && '➡️'}
+              {item.id === 'uvod' && '⚡'}
+              {item.id === 'norma' && '📘'}
+              {item.id === 'kalkulacka' && '🧮'}
+              {item.id === 'postup' && '🧭'}
+              {item.id === 'kontakt' && '✉️'}
+              {!['uvod', 'norma', 'kalkulacka', 'postup', 'kontakt'].includes(item.id) && '➡️'}
             </span>
             <span>{item.name}</span>
           </button>
