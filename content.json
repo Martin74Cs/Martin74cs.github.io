@@ -1,51 +1,138 @@
 [
   {
-    "id": "home",
-    "name": "Domů",
-    "description": "Vítejte na domovské stránce! Zde najdete přehled nejnovějších aktualizací a důležitých informací.",
-    "imageUrl": "https://picsum.photos/800/600?random=1",
-    "additionalInfo": "Na domovské stránce můžete rychle přistupovat k nejdůležitějším funkcím a vidět aktuální oznámení."
+    "id": "uvod",
+    "name": "Úvod",
+    "description": "ElektroVzorce je pracovní prostor pro interaktivní výpočty podle řady norem ČSN 62305 ed.4. Vyberte sekci vlevo a začněte s konfigurací vzorců.",
+    "imageUrl": "https://images.unsplash.com/photo-1504384308090-c894fdcc538d?auto=format&fit=crop&w=1200&q=80",
+    "additionalInfo": "Aplikace je připravena tak, aby bylo možné doplnit licencované znění norem a propojit jednotlivé výpočty. V každé kartě můžete zadat výraz, proměnné a okamžitě vidět výsledek."
   },
   {
-    "id": "profile",
-    "name": "Profil",
-    "description": "Spravujte svůj uživatelský profil. Můžete zde aktualizovat své osobní údaje a nastavení soukromí.",
-    "imageUrl": "https://picsum.photos/800/600?random=2",
-    "additionalInfo": "Aktualizujte svůj avatar, změňte heslo nebo upravte své kontaktní údaje."
+    "id": "norma",
+    "name": "ČSN 62305 ed.4 — Interaktivní vzorce",
+    "type": "formulas",
+    "description": "Tato sekce je připravena pro kompletní sadu výpočtů z řady norem ČSN 62305 ed.4. Níže najdete připravené karty se vstupy a validací, do kterých lze doplnit přesné výrazy.",
+    "legalNotice": "Poznámka k autorským právům: Texty a vzorce z norem ČSN 62305 ed.4 jsou chráněny. Zde jsou připraveny pouze interaktivní šablony. Přesné znění vzorců doplňte pouze v souladu s licencí.",
+    "formulaSections": [
+      {
+        "id": "cast-1",
+        "title": "Část 1 — Obecné zásady",
+        "description": "Základní veličiny a parametrizace pro další výpočty.",
+        "entries": [
+          {
+            "id": "c1-01",
+            "name": "Definice základních veličin",
+            "description": "Doplňte licencovaný vzorec pro výpočet základní veličiny.",
+            "expressionPlaceholder": "např. a + b",
+            "variables": [
+              { "id": "a", "label": "Proměnná a", "unit": "-", "defaultValue": 1 },
+              { "id": "b", "label": "Proměnná b", "unit": "-", "defaultValue": 2 }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "cast-2",
+        "title": "Část 2 — Riziková analýza",
+        "description": "Šablony pro výpočty rizik a pravděpodobnostních faktorů.",
+        "entries": [
+          {
+            "id": "c2-01",
+            "name": "Výpočet dílčího rizika",
+            "description": "Doplňte vzorec pro dílčí riziko dle normy.",
+            "expressionPlaceholder": "např. r1 * r2",
+            "variables": [
+              { "id": "r1", "label": "Rizikový faktor R1", "unit": "-", "defaultValue": 0.1 },
+              { "id": "r2", "label": "Rizikový faktor R2", "unit": "-", "defaultValue": 0.2 }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "cast-3",
+        "title": "Část 3 — Fyzické poškození",
+        "description": "Vstupy pro výpočty návrhu ochranných opatření.",
+        "entries": [
+          {
+            "id": "c3-01",
+            "name": "Dimenzování ochranných opatření",
+            "description": "Doplňte licencovaný vzorec a otestujte nastavení.",
+            "expressionPlaceholder": "např. x / y",
+            "variables": [
+              { "id": "x", "label": "Parametr X", "unit": "-", "defaultValue": 10 },
+              { "id": "y", "label": "Parametr Y", "unit": "-", "defaultValue": 5 }
+            ]
+          },
+          {
+            "id": "c3-02",
+            "name": "Ochranný úhel a výška jímače",
+            "description": "Zadejte licencovaný vztah mezi výškou jímače a ochranným úhlem.",
+            "expressionPlaceholder": "např. h * tan(theta)",
+            "variables": [
+              { "id": "h", "label": "Výška jímače", "unit": "m", "defaultValue": 12 },
+              { "id": "theta", "label": "Ochranný úhel", "unit": "rad", "defaultValue": 0.7 }
+            ]
+          },
+          {
+            "id": "c3-03",
+            "name": "Valivá koule — poloměr ochrany",
+            "description": "Doplňte vzorec pro kontrolu ochranného prostoru metodou valivé koule.",
+            "expressionPlaceholder": "např. R - sqrt(R^2 - d^2)",
+            "variables": [
+              { "id": "R", "label": "Poloměr valivé koule", "unit": "m", "defaultValue": 20 },
+              { "id": "d", "label": "Vodorovná vzdálenost", "unit": "m", "defaultValue": 5 }
+            ]
+          },
+          {
+            "id": "c3-04",
+            "name": "Odstupová vzdálenost s",
+            "description": "Zadejte licencovaný vztah pro výpočet odstupové vzdálenosti mezi LPS a chráněným systémem.",
+            "expressionPlaceholder": "např. (ki * kc * km * l) / 1000",
+            "variables": [
+              { "id": "ki", "label": "Koeficient ochrany", "unit": "-", "defaultValue": 0.08 },
+              { "id": "kc", "label": "Koeficient rozdělení proudu", "unit": "-", "defaultValue": 1 },
+              { "id": "km", "label": "Koeficient materiálu", "unit": "-", "defaultValue": 1 },
+              { "id": "l", "label": "Délka vedení", "unit": "m", "defaultValue": 10 }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "cast-4",
+        "title": "Část 4 — Elektrické a elektronické systémy",
+        "description": "Šablony pro návrh ochrany systémů uvnitř objektu.",
+        "entries": [
+          {
+            "id": "c4-01",
+            "name": "Účinnost ochrany systému",
+            "description": "Doplňte vzorec pro účinnost ochranného opatření.",
+            "expressionPlaceholder": "např. 1 - p",
+            "variables": [
+              { "id": "p", "label": "Pravděpodobnost poruchy", "unit": "-", "defaultValue": 0.05 }
+            ]
+          }
+        ]
+      }
+    ]
   },
   {
-    "id": "settings",
-    "name": "Nastavení",
-    "description": "Konfigurujte aplikaci podle svých potřeb. Změňte jazyk, motiv nebo jiná systémová nastavení.",
-    "imageUrl": "https://picsum.photos/800/600?random=3",
-    "additionalInfo": "Přizpůsobte si vzhled aplikace, notifikace a další pokročilá nastavení."
+    "id": "kalkulacka",
+    "name": "Vlastní kalkulátor",
+    "description": "Použijte libovolný výraz pro rychlý výpočet. Hodí se pro kontrolu výsledků nebo ověření mezikroků.",
+    "imageUrl": "https://images.unsplash.com/photo-1504384308090-c894fdcc538d?auto=format&fit=crop&w=1200&q=80",
+    "additionalInfo": "Pokud máte licencovanou normu, můžete vytvořit samostatné karty pro jednotlivé vzorce a propojit je s daty z vašich projektů."
   },
   {
-    "id": "messages",
-    "name": "Zprávy",
-    "description": "Prohlížejte a spravujte své zprávy. Můžete zde odesílat nové zprávy a odpovídat na stávající konverzace.",
-    "imageUrl": "https://picsum.photos/800/600?random=4",
-    "additionalInfo": "Vaše soukromá schránka pro komunikaci s ostatními uživateli. Všechny zprávy jsou bezpečně uloženy."
+    "id": "postup",
+    "name": "Postup práce",
+    "description": "Doporučený workflow: importujte licencované vzorce, ověřte vstupy a sdílejte výstupy s týmem.",
+    "imageUrl": "https://images.unsplash.com/photo-1504384308090-c894fdcc538d?auto=format&fit=crop&w=1200&q=80",
+    "additionalInfo": "Začněte analýzou rizik, pokračujte návrhem opatření a zakončete kontrolou ochrany systémů. Každý krok může mít vlastní šablonu v sekci vzorců."
   },
   {
-    "id": "reports",
-    "name": "Reporty",
-    "description": "Generujte a analyzujte různé reporty. Získejte cenné statistiky a přehledy o svých datech.",
-    "imageUrl": "https://picsum.photos/800/600?random=5",
-    "additionalInfo": "Podrobné grafy a tabulky pro lepší pochopení vašich dat a trendů."
-  },
-  {
-    "id": "help",
-    "name": "Nápověda",
-    "description": "Potřebujete pomoc? Projděte si naše FAQ nebo kontaktujte podporu.",
-    "imageUrl": "https://picsum.photos/800/600?random=6",
-    "additionalInfo": "Komplexní sekce nápovědy, která vám pomůže vyřešit jakýkoli problém."
-  },
-  {
-    "id": "test-page",
-    "name": "Test",
-    "description": "Toto jsou testovací data.",
-    "url": "https://martin74cs.github.io/ZkratoveProudy/",
-    "additionalInfo": "Toto je položka pro testování chování aplikace s různými daty."
+    "id": "kontakt",
+    "name": "Kontakt & licence",
+    "description": "Tato aplikace neobsahuje licencované znění norem. Pokud potřebujete doplnit přesné vzorce, ujistěte se, že máte odpovídající licenci.",
+    "imageUrl": "https://images.unsplash.com/photo-1484417894907-623942c8ee29?auto=format&fit=crop&w=1200&q=80",
+    "additionalInfo": "Pro správu licencí kontaktujte svého poskytovatele norem nebo firemního správce dokumentace."
   }
 ]
