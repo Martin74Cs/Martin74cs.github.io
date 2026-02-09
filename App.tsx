@@ -12,10 +12,16 @@ function App() {
 
   // Načtení dat z externího JSON souboru
   useEffect(() => {
-    fetch('content.json')
+    // Použití BASE_URL z Vite pro správnou cestu a přidání timestampu pro zamezení cache
+    const baseUrl = import.meta.env.BASE_URL === './' ? '' : import.meta.env.BASE_URL;
+    const contentUrl = `${baseUrl}content.json?t=${new Date().getTime()}`;
+
+    console.log("Pokus o načtení dat z:", contentUrl);
+
+    fetch(contentUrl)
       .then(response => {
         if (!response.ok) {
-          throw new Error('Nepodařilo se načíst konfigurační soubor.');
+          throw new Error(`Nepodařilo se načíst soubor (Status: ${response.status}).`);
         }
         return response.json();
       })
@@ -28,7 +34,7 @@ function App() {
       })
       .catch(err => {
         console.error("Chyba při načítání dat:", err);
-        setError('Nepodařilo se načíst obsah aplikace. Zkontrolujte prosím soubor content.json.');
+        setError(`Nepodařilo se načíst obsah aplikace: ${err.message}`);
         setLoading(false);
       });
   }, []);
