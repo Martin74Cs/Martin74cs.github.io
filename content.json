@@ -28,13 +28,6 @@
     "additionalInfo": "Vaše soukromá schránka pro komunikaci s ostatními uživateli. Všechny zprávy jsou bezpečně uloženy."
   },
   {
-    "id": "reports",
-    "name": "Reporty",
-    "description": "Generujte a analyzujte různé reporty. Získejte cenné statistiky a přehledy o svých datech.",
-    "imageUrl": "https://picsum.photos/800/600?random=5",
-    "additionalInfo": "Podrobné grafy a tabulky pro lepší pochopení vašich dat a trendů."
-  },
-  {
     "id": "help",
     "name": "Nápověda",
     "description": "Potřebujete pomoc? Projděte si naše FAQ nebo kontaktujte podporu.",
