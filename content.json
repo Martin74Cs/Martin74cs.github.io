@@ -8,9 +8,8 @@
   },
   {
     "id": "profile",
-    "name": "Git přehled",
+    "name": "Profil",
     "description": "Spravujte svůj uživatelský profil. Můžete zde aktualizovat své osobní údaje a nastavení soukromí.",
-    "url": "https://martin74cs.github.io/GitHubPrehled/",
     "imageUrl": "https://picsum.photos/800/600?random=2",
     "additionalInfo": "Aktualizujte svůj avatar, změňte heslo nebo upravte své kontaktní údaje."
   },
@@ -30,8 +29,7 @@
   },
   {
     "id": "reports",
-    "name": "Čerpadlo",
-    "url": "https://martin74cs.github.io/cerpadlo/"
+    "name": "Reporty",
     "description": "Generujte a analyzujte různé reporty. Získejte cenné statistiky a přehledy o svých datech.",
     "imageUrl": "https://picsum.photos/800/600?random=5",
     "additionalInfo": "Podrobné grafy a tabulky pro lepší pochopení vašich dat a trendů."
@@ -44,16 +42,9 @@
     "additionalInfo": "Komplexní sekce nápovědy, která vám pomůže vyřešit jakýkoli problém."
   },
   {
-    "id": "test",
-    "name": "Nosník",
-    "description": "Veknutý nostník",
-    "url": "https://martin74cs.github.io/VetknutyNosnik/",
-    "additionalInfo": "Toto je položka pro testování chování aplikace s různými daty."
-  },
-  {
-    "id": "Zkrat",
-    "name": "Zkrat",
-    "description": "Toto je primiticní výpočet zkratových poměrů sítě.",
+    "id": "test-page",
+    "name": "Test",
+    "description": "Toto jsou testovací data.",
     "url": "https://martin74cs.github.io/ZkratoveProudy/",
     "additionalInfo": "Toto je položka pro testování chování aplikace s různými daty."
   }
