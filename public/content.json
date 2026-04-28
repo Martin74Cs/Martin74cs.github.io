@@ -42,6 +42,13 @@
     "additionalInfo": "Komplexní sekce nápovědy, která vám pomůže vyřešit jakýkoli problém."
   },
   {
+    "id": "Seznam",
+    "name": "Seznam",
+    "description": "Potřebujete pomoc? Projděte si naše FAQ nebo kontaktujte podporu.",
+    "imageUrl": "http://Seznam.cz",
+    "additionalInfo": "Komplexní sekce nápovědy, která vám pomůže vyřešit jakýkoli problém."
+  },  
+  {
     "id": "test-page",
     "name": "Test",
     "description": "Toto jsou testovací data.",
