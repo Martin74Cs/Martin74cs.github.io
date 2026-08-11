@@ -28,8 +28,9 @@ jobs:
       - name: Checkout web repository
         uses: actions/checkout@v4
 
-      - name: Checkout Obsidian repository for latest notes
+      - name: Try Checkout Obsidian repository
         uses: actions/checkout@v4
+        continue-on-error: true
         with:
           repository: 'Martin74Cs/Obsidian'
           path: 'Obsidian'
