@@ -15,6 +15,11 @@ const Sidebar: React.FC<SidebarProps> = ({ items, selectedItemIndex, onSelect })
     if (item.type === 'obsidian' || item.id === 'obsidian-notes') return '📚';
     if (item.id === 'home') return '🏠';
     if (item.id === 'zkratove-proudy') return '⚡';
+    if (item.id === 'gravitacni-hriste') return '🚀';
+    if (item.id === 'cerpadlo') return '🚰';
+    if (item.id === 'celularni-automat') return '🧬';
+    if (item.id === 'kompenzace') return '🔋';
+    if (item.id === 'vetknuty-nosnik') return '🏗️';
     if (item.id === 'github-profile') return '🐙';
     if (item.id === 'seznam') return '🔍';
     if (item.id === 'profile') return '👤';
