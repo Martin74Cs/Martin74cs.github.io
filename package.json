@@ -1,12 +1,13 @@
 {
-  "name": "navigační-ukázka",
+  "name": "martin74cs-web",
   "private": true,
   "version": "0.0.0",
   "type": "module",
   "homepage": "https://Martin74Cs.github.io",
   "scripts": {
-    "dev": "vite",
-    "build": "vite build",
+    "sync-obsidian": "node scripts/sync-obsidian.js",
+    "dev": "npm run sync-obsidian && vite",
+    "build": "npm run sync-obsidian && vite build",
     "preview": "vite preview",
     "predeploy": "npm run build",
     "deploy": "gh-pages -d dist"
