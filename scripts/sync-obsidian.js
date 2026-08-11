@@ -9,7 +9,8 @@ const obsidianPath = path.resolve(__dirname, '../../Obsidian');
 const outputPath = path.resolve(__dirname, '../public/obsidian-data.json');
 
 /**
- * Rekurzivně prohledá adresář a vrátí strom poznámek a jejich obsah
+ * Rekurzivně prohledá adresář a vrátí strom poznámek a jejich obsah.
+ * Ignoruje skryté soubory a složky začínající na 001 nebo 002.
  */
 function scanObsidianDir(dir, relativePath = '') {
   if (!fs.existsSync(dir)) {
@@ -20,7 +21,14 @@ function scanObsidianDir(dir, relativePath = '') {
   const result = [];
 
   for (const item of items) {
-    if (item.name.startsWith('.')) continue;
+    // Ignorovat skryté položky a složky/soubory začínající na 001 nebo 002
+    if (
+      item.name.startsWith('.') ||
+      item.name.startsWith('001') ||
+      item.name.startsWith('002')
+    ) {
+      continue;
+    }
 
     const fullPath = path.join(dir, item.name);
     const relPath = relativePath ? `${relativePath}/${item.name}` : item.name;
@@ -58,7 +66,7 @@ function scanObsidianDir(dir, relativePath = '') {
 }
 
 try {
-  console.log('Zahajuji synchronizaci poznámek z Obsidian repozitáře...');
+  console.log('Zahajuji synchronizaci poznámek z Obsidian repozitáře (s filtrací 001 a 002)...');
   if (fs.existsSync(obsidianPath)) {
     const obsidianData = scanObsidianDir(obsidianPath);
     if (obsidianData && obsidianData.length > 0) {
