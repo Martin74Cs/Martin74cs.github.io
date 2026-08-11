@@ -56,20 +56,6 @@
     "additionalInfo": "Inženýrský výpočtový modul pro statické a pevnostní posouzení vetknutého nosníku."
   },
   {
-    "id": "github-profile",
-    "name": "GitHub Repozitáře",
-    "description": "Přehled všech veřejných repozitářů na GitHub profilu Martin74Cs.",
-    "url": "https://github.com/Martin74Cs?tab=repositories",
-    "additionalInfo": "Navštivte přímo GitHub profil a prohlédněte si zdrojové kódy a projekty."
-  },
-  {
-    "id": "seznam",
-    "name": "Seznam.cz",
-    "description": "Veřejný český vyhledávací a zpravodajský portál Seznam.cz.",
-    "url": "https://www.seznam.cz",
-    "additionalInfo": "Rychlý přístup k portálu Seznam.cz (pokud se nenačte přímo v rámu, použijte tlačítko pro otevření na nové záložce)."
-  },
-  {
     "id": "help",
     "name": "Nápověda & Odkazy",
     "description": "Informace o používání webu a návody.",

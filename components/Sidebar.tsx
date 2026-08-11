@@ -20,8 +20,6 @@ const Sidebar: React.FC<SidebarProps> = ({ items, selectedItemIndex, onSelect })
     if (item.id === 'celularni-automat') return '🧬';
     if (item.id === 'kompenzace') return '🔋';
     if (item.id === 'vetknuty-nosnik') return '🏗️';
-    if (item.id === 'github-profile') return '🐙';
-    if (item.id === 'seznam') return '🔍';
     if (item.id === 'profile') return '👤';
     if (item.id === 'settings') return '⚙️';
     if (item.id === 'messages') return '✉️';
