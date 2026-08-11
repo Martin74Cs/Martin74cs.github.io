@@ -5,7 +5,14 @@ import { fileURLToPath } from 'url';
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 
-const obsidianPath = path.resolve(__dirname, '../../Obsidian');
+// Hledání složky Obsidian v různých relativních cestách (lokálně i v CI)
+const possiblePaths = [
+  path.resolve(__dirname, '../../Obsidian'),
+  path.resolve(__dirname, '../Obsidian'),
+  path.resolve(__dirname, '../public/Obsidian'),
+];
+
+let obsidianPath = possiblePaths.find(p => fs.existsSync(p)) || possiblePaths[0];
 const outputPath = path.resolve(__dirname, '../public/obsidian-data.json');
 
 /**
@@ -21,7 +28,6 @@ function scanObsidianDir(dir, relativePath = '') {
   const result = [];
 
   for (const item of items) {
-    // Ignorovat skryté položky a složky/soubory začínající na 001 nebo 002
     if (
       item.name.startsWith('.') ||
       item.name.startsWith('001') ||
@@ -66,7 +72,7 @@ function scanObsidianDir(dir, relativePath = '') {
 }
 
 try {
-  console.log('Zahajuji synchronizaci poznámek z Obsidian repozitáře (s filtrací 001 a 002)...');
+  console.log(`Zahajuji synchronizaci poznámek z ${obsidianPath}...`);
   if (fs.existsSync(obsidianPath)) {
     const obsidianData = scanObsidianDir(obsidianPath);
     if (obsidianData && obsidianData.length > 0) {
@@ -74,7 +80,7 @@ try {
       console.log(`Úspěšně vygenerován soubor ${outputPath} s ${obsidianData.length} položkami.`);
     }
   } else {
-    console.log(`Adresář ${obsidianPath} nenalezen (spuštěno v CI). Ponechávám stávající ${outputPath}.`);
+    console.log(`Adresář Obsidian nenalezen. Ponechávám stávající ${outputPath}.`);
   }
 } catch (error) {
   console.error('Chyba při generování obsidian-data.json:', error);

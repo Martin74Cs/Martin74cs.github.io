@@ -3,12 +3,9 @@ name: Deploy to GitHub Pages
 on:
   push:
     branches: ["main"]
-  # Automatické spouštění každý den o půlnoci pro synchronizaci nově přidaných poznámek z Obsidianu
   schedule:
     - cron: '0 0 * * *'
-  # Umožní ruční spuštění aktualizace tlačítkem v GitHub záložce Actions
   workflow_dispatch:
-  # Umožní automatické spuštění signálem z repozitáře Obsidian
   repository_dispatch:
     types: [obsidian_updated]
 
@@ -35,7 +32,7 @@ jobs:
         uses: actions/checkout@v4
         with:
           repository: 'Martin74Cs/Obsidian'
-          path: '../Obsidian'
+          path: 'Obsidian'
 
       - name: Setup Node.js
         uses: actions/setup-node@v4
