@@ -2,50 +2,43 @@
   {
     "id": "home",
     "name": "Domů",
-    "description": "Vítejte na domovské stránce! Zde najdete přehled nejnovějších aktualizací a důležitých informací.",
-    "imageUrl": "https://picsum.photos/800/600?random=1",
-    "additionalInfo": "Na domovské stránce můžete rychle přistupovat k nejdůležitějším funkcím a vidět aktuální oznámení."
+    "description": "Vítejte na domovské stránce! Zde najdete přehled nejnovějších aktualizací, odkazů a integrovaných poznámek z repozitáře Obsidian.",
+    "imageUrl": "https://images.unsplash.com/photo-1507238691740-187a5b1d37b8?auto=format&fit=crop&w=800&q=80",
+    "additionalInfo": "Zde můžete rychle přistupovat k nejdůležitějším veřejným projektům, odkazům a poznámkám z Obsidian trezoru."
   },
   {
-    "id": "profile",
-    "name": "Profil",
-    "description": "Spravujte svůj uživatelský profil. Můžete zde aktualizovat své osobní údaje a nastavení soukromí.",
-    "imageUrl": "https://picsum.photos/800/600?random=2",
-    "additionalInfo": "Aktualizujte svůj avatar, změňte heslo nebo upravte své kontaktní údaje."
+    "id": "obsidian-notes",
+    "name": "Obsidian Poznámky",
+    "description": "Prohlížeč veřejných poznámek a dokumentace z repozitáře Obsidian.",
+    "type": "obsidian",
+    "additionalInfo": "Obsahuje poznámky k programování (Python, C#, DotNet, AI), normám, elektroinstalacím a dalším."
   },
   {
-    "id": "settings",
-    "name": "Nastavení",
-    "description": "Konfigurujte aplikaci podle svých potřeb. Změňte jazyk, motiv nebo jiná systémová nastavení.",
-    "imageUrl": "https://picsum.photos/800/600?random=3",
-    "additionalInfo": "Přizpůsobte si vzhled aplikace, notifikace a další pokročilá nastavení."
+    "id": "zkratove-proudy",
+    "name": "Zkratové Proudy",
+    "description": "Aplikace a kalkulátor pro výpočet zkratových proudů.",
+    "url": "https://martin74cs.github.io/ZkratoveProudy/",
+    "additionalInfo": "Samostatná webová kalkulačka a nástroj pro elektroinženýrské výpočty zkratových proudů."
   },
   {
-    "id": "messages",
-    "name": "Zprávy",
-    "description": "Prohlížejte a spravujte své zprávy. Můžete zde odesílat nové zprávy a odpovídat na stávající konverzace.",
-    "imageUrl": "https://picsum.photos/800/600?random=4",
-    "additionalInfo": "Vaše soukromá schránka pro komunikaci s ostatními uživateli. Všechny zprávy jsou bezpečně uloženy."
+    "id": "github-profile",
+    "name": "GitHub Repozitáře",
+    "description": "Přehled všech veřejných repozitářů na GitHub profilu Martin74Cs.",
+    "url": "https://github.com/Martin74Cs?tab=repositories",
+    "additionalInfo": "Navštivte přímo GitHub profil a prohlédněte si zdrojové kódy a projekty."
+  },
+  {
+    "id": "seznam",
+    "name": "Seznam.cz",
+    "description": "Veřejný český vyhledávací a zpravodajský portál Seznam.cz.",
+    "url": "https://www.seznam.cz",
+    "additionalInfo": "Rychlý přístup k portálu Seznam.cz (pokud se nenačte přímo v rámu, použijte tlačítko pro otevření na nové záložce)."
   },
   {
     "id": "help",
-    "name": "Nápověda",
-    "description": "Potřebujete pomoc? Projděte si naše FAQ nebo kontaktujte podporu.",
-    "imageUrl": "https://picsum.photos/800/600?random=6",
-    "additionalInfo": "Komplexní sekce nápovědy, která vám pomůže vyřešit jakýkoli problém."
-  },
-  {
-    "id": "Seznam",
-    "name": "Seznam",
-    "description": "Potřebujete pomoc? Projděte si naše FAQ nebo kontaktujte podporu.",
-    "imageUrl": "https://seznam.cz",
-    "additionalInfo": "Komplexní sekce nápovědy, která vám pomůže vyřešit jakýkoli problém."
-  },  
-  {
-    "id": "test-page",
-    "name": "Test",
-    "description": "Toto jsou testovací data.",
-    "url": "https://martin74cs.github.io/ZkratoveProudy/",
-    "additionalInfo": "Toto je položka pro testování chování aplikace s různými daty."
+    "name": "Nápověda & Odkazy",
+    "description": "Informace o používání webu a návody.",
+    "imageUrl": "https://images.unsplash.com/photo-1434030216411-0b793f4b4173?auto=format&fit=crop&w=800&q=80",
+    "additionalInfo": "Veškeré veřejné odkazy naleznete v levém menu. Pro zobrazení poznámek z repozitáře Obsidian vyberte záložku Obsidian Poznámky."
   }
 ]
